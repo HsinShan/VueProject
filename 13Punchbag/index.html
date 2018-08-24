@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <header><h1>Punch the Bag</h1></header>
+    <div id="root">
+        <div id="bag">
+            <img v-show="!end" src="bag.png">
+            <img v-show="end" src="bag-burst.png">
+        </div>
+        <div id="health">
+            <div v-bind:style="{width:health+'%'}"></div>
+        </div>
+        <div id="control">
+            <button @click="punch" v-show="!end">Punch</button>
+            <button @click="restart">Restart</button>
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>
