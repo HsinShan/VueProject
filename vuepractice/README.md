@@ -16,3 +16,5 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+DEMO:http://htmlpreview.github.io/?https://github.com/HsinShan/VueProject/blob/master/vuepractice/index.html
